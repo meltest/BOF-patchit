@@ -1,0 +1,26 @@
+{
+  "name": "patchit",
+  "version": "v0.0.1",
+  "command_name": "patchit",
+  "extension_author": "@meltest",
+  "original_author": "@ScriptIdiot",
+  "repo_url": "https://github.com/meltest/BOF-patchit",
+  "help": "An all-in-one BOF to patch, check and revert AMSI and ETW for x64 process.",
+  "depends_on": "coff-loader",
+  "entrypoint": "go",
+  "files": [
+    {
+      "os": "windows",
+      "arch": "amd64",
+      "path": "patchit.x64.o"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "command",
+      "desc": "1(check),2(all),3(amsi),4(etw),5(revertAll),6(revertAmsi),7(revertEtw)",
+      "type": "int",
+      "optional": false
+    }
+  ]
+}
